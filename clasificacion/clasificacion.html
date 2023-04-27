@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Formula 1 - Clasificación</title>
+        <link rel="icon" type="image/x-icon" href="../recursos/img/favicon.png">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="../recursos/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script type = "text/javascript" src = "../recursos/scripts.js"></script>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <a href="../index/index.html"><img class="logo" src="../recursos/img/logo.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="clasificacion.html">Clasificación</a></li>
+                    <li><a href="#" onclick="noticiaAleatoria()">Noticia Aleatoria</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SECTION (Tabla de la clasificación): Contien la clasifiación general en formato de tabla.-->
+        
+        <section class="tabla-clasificacion">
+
+            <h1>Clasificación de Pilotos</h1>
+
+            <!-- Tabla -->
+
+            <table cellspacing="0" cellpadding="0">
+
+              <!-- Primera fila con los 5 apartados -->
+                <thead>
+                  <tr>
+                  <th><abbr title="Posición">POS</abbr></th>
+                    <th>PILOTO</th>
+                    <th>NACIONALIDAD</th>
+                    <th>COCHE</th>
+                    <th><abbr title="Puntos">PTS</abbr></th>
+                  </tr>
+                </thead>
+
+                <!-- Cuerpo de la tabla -->
+               <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="../pilotos/verstappen/piloto.html"><strong>Max Verstappen</strong></a></td>
+                    <td>NED</td>
+                    <td>Red Bull</td>
+                    <td><strong>351.5</strong></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="../pilotos/hamilton/piloto.html"><strong>Lewis Hamilton</strong></a></td>
+                    <td>GBR</td>
+                    <td>Mercedes</td>
+                    <td><strong>343.5</strong></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="../pilotos/bottas/piloto.html"><strong>Valtteri Bottas</strong></a></td>
+                    <td>FIN</td>
+                    <td>Mercedes</td>
+                    <td><strong>203</strong></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><a href="../pilotos/pérez/piloto.html"><strong>Sergio Pérez</strong></a></td>
+                    <td>MEX</td>
+                    <td>Red Bull</td>
+                    <td><strong>190</strong></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><a href="../pilotos/norris/piloto.html"><strong>Lando Norris</strong></a></td>
+                    <td>GBR</td>
+                    <td>McLaren</td>
+                    <td><strong>153</strong></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td><a href="../pilotos/leclerc/piloto.html"><strong>Charles Leclerc</strong></a></td>
+                    <td>MON</td>
+                    <td>Ferrari</td>
+                    <td><strong>152</strong></td>
+                  </tr>
+                  <tr>
+                      <td>7</td>
+                      <td><a href="../pilotos/sainz/piloto.html"><strong>Carlos Sainz</strong></a></td>
+                      <td>ESP</td>
+                      <td>Ferrari</td>
+                      <td><strong>145.5</strong></td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td><a href="../pilotos/ricciardo/piloto.html"><strong>Daniel Ricciardo</strong></a></td>
+                      <td>AUS</td>
+                      <td>Mercedes</td>
+                      <td><strong>105</strong></td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td><a href="../pilotos/gasly/piloto.html"><strong>Pierre Gasly</strong></a></td>
+                      <td>FRA</td>
+                      <td>Alpha Tauri</td>
+                      <td><strong>92</strong></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><a href="../pilotos/alonso/piloto.html"><strong>Fernando Alonso</strong></a></td>
+                        <td>ESP</td>
+                        <td>Alpine</td>
+                        <td><strong>77</strong></td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td><a href="../pilotos/ocon/piloto.html"><strong>Esteban Ocon</strong></a></td>
+                        <td>FRA</td>
+                        <td>Alpine</td>
+                        <td><strong>60</strong></td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td><a href="../pilotos/vettel/piloto.html"><strong>Sebastian Vettel</strong></a></td>
+                        <td>GER</td>
+                        <td>Aston Martin</td>
+                        <td><strong>43</strong></td>
+                      </tr>
+                      <tr>
+                          <td>13</td>
+                          <td><a href="../pilotos/stroll/piloto.html"><strong>Lance Stroll</strong></a></td>
+                          <td>CAN</td>
+                          <td>Aston Martin</td>
+                          <td><strong>34</strong></td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td><a href="../pilotos/tsunoda/piloto.html"><strong>Yuki Tsunoda</strong></a></td>
+                          <td>JPN</td>
+                          <td>Alpha Tauri</td>
+                          <td><strong>20</strong></td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td><a href="../pilotos/russell/piloto.html"><strong>George Russell</strong></a></td>
+                          <td>GBR</td>
+                          <td>Williams</td>
+                          <td><strong>16</strong></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td><a href="../pilotos/raikkonen/piloto.html"><strong>Kimi Räikkönen</strong></a></td>
+                            <td>FIN</td>
+                            <td>Alfa Romeo</td>
+                            <td><strong>10</strong></td>
+                          </tr>
+                          <tr>
+                            <td>17</td>
+                            <td><a href="../pilotos/latifi/piloto.html"><strong>Nicholas Latifi</strong></a></td>
+                            <td>CAN</td>
+                            <td>Alpha Tauri</td>
+                            <td><strong>7</strong></td>
+                          </tr>
+                          <tr>
+                            <td>18</td>
+                            <td><a href="../pilotos/giovinazzi/piloto.html"><strong>Antonio Giovinazzi</strong></a></td>
+                            <td>ITA</td>
+                            <td>Alfa Romeo</td>
+                            <td><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td>19</td>
+                            <td><a href="../pilotos/schumacher/piloto.html"><strong>Nick Schumacher</strong></a></td>
+                            <td>GER</td>
+                            <td>Haas</td>
+                            <td><strong>0</strong></td>
+                          </tr>
+                          <tr>
+                            <td>20</td>
+                            <td><a href="../pilotos/mazepin/piloto.html"><strong>Nikita Mazepin</strong></a></td>
+                            <td>RUS</td>
+                            <td>Haas</td>
+                            <td><strong>0</strong></td>
+                          </tr>
+               </tbody>
+            </table>
+
+          </section>
+
+
+          <footer>
+            <div class="footer-logo">
+                <a href="../index/index.html"><img src="../recursos/img/logo2.png" height="70px"></img></a>
+            </div>
+            <div class="footer-lists-container">
+                <div>
+                    <ul>
+                        <li><a href="https://www.formula1.com/" target="_blank">Formula1.com</a></li>
+                        <li><a href="https://www.f1aldia.com/" target="_blank">F1aldia.com</a></li>
+                        <li><a href="https://www.caranddriver.com/es/formula-1/" target="_blank">Caranddriver.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://soymotor.com/" target="_blank">Soymotor.com</a></li>
+                        <li><a href="https://www.marca.com/motor/formula1.html?intcmp=MENUPROD&s_kw=formula-1" target="_blank">Marca.com</a></li>
+                        <li><a href="https://as.com/motor/formula_1.html?omnil=src-sab" target="_blank">As.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://www.reddit.com/r/formula1/" target="_blank">Reddit.com</a></li>
+                        <li><a href="https://www.sport.es/es/motor/formula1/" target="_blank">Sport.es</a></li>
+                        <li><a href="https://www.mundodeportivo.com/motor/f1" target="_blank">Mundodeportivo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <address>
+                <a href="mailto:creator@gmail.com">Contacto</a>
+            </address>
+          </footer>
+    </body>
+
+    <!-- Script para colorear las filas de la tabla -->
+    <script>
+        coloreaFilas();
+    </script>
+</html>

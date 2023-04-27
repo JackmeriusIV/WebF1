@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+    <!-- HEAD: Se encuentra en todas las páginas. Se da un título a la página y se importan fuentes, hojas de estilo y scripts. -->
+    <head>
+        <title>Formula 1 - Catagoría Reina</title>
+        <link rel="icon" type="image/x-icon" href="../recursos/img/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="../recursos/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script type = "text/javascript" src = "../recursos/scripts.js"></script>
+    </head>
+
+    <body>
+
+        <!-- HEADER: Se encuentra en todas las páginas. Contiene un logo y un apartado de navegación con enlaces a la clasificación y a la noticia aleatoria. -->
+
+        <header class="header">
+            <a href="index.html"><img class="logo" src="../recursos/img/logo.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
+                    <li><a href="#" onclick="noticiaAleatoria()">Noticia Aleatoria</a></li>
+                    <li id="busqueda-container">
+                            <input id="busqueda" type="text" placeholder="Ir a página de piloto..." onkeydown="buscaPiloto(event)">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SECTION (sección del líder): Es una sección que muestra al piloto líder del mundial. -->
+
+        <section class="section-index">
+            <div class="fila">
+                <p>Líder del Mundial</p>
+                <div class="fila-marca-puntos">
+                    <div><img src="img/lider-logo.png"></div>
+                    <h1>Max Verstappen</h1>
+                </div>
+            </div>
+            <div  class="fila-img-container">
+                <img src="img/verstappen.jpg">
+            </div>
+        </section>
+
+        <!-- MAIN: Tiene todas las noticias empezando con una a la izquierda, la principal, y seguida de una tabla a la derecha hecha con flex con otras 6 noticias. -->
+        
+        <main>
+            <div class="col izquierda">
+                <a href="../noticias/noticia1.html">
+                    <div>
+                        <h2>
+                            Lewis Hamilton impone su dominio en el Gran Premio de Brasil, esta vez no tuvo rival a la altura
+                        </h2>
+                    </div>
+                    <div class="img-wrapper"><img src="img/noticias/noticia1.jpg"></div>
+                    <div class="intro">
+                        <h3>GP de Brasil</h3>
+                        <p>
+                            El domingo llegó en nuestros calendarios, la fecha elegida para celebrar la carrera del Gran Premio de Brasil había llegado después de una larga espera.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        
+
+            <!-- ------------------------------ COLUMNA DEREACHA ----------------------------- -->
+
+            <div class="col derecha">
+                <div class="noticia">
+                    <a href="../noticias/noticia2.html">
+                       <div class="noticia-img-wrapper">
+                            <img src="img/noticias/noticia2.jpg">
+                        </div>
+                        <div class="noticia-texto">
+                            <p>
+                                Fernando Alonso termina tercero en el GP de Qatar, su primer podio desde su regreso a la fórmula 1
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                    
+                <div class="noticia">
+                  <a href="../noticias/noticia3.html">
+                        <div class="noticia-img-wrapper">
+                            <img src="img/noticias/noticia3.jpg">
+                        </div>
+                        <div class="noticia-texto">
+                            <p>
+                                Ocho puntos, dos carreras... un Mundial apasionante.                            
+                            </p>
+                        </div>
+                    </a>
+                </div> 
+
+                <div class="noticia">
+                    <a href="../noticias/noticia4.html">
+                          <div class="noticia-img-wrapper">
+                              <img src="img/noticias/noticia4.jpg">
+                          </div>
+                          <div  class="noticia-texto">
+                              <p>
+                                Max Verstappen: "Este fin de semana ha sido bastante difícil para nosotros como equipo"
+                              </p>
+                          </div>
+                      </a>
+                  </div> 
+
+                  <div class="noticia">
+                    <a href="../noticias/noticia5.html">
+                          <div class="noticia-img-wrapper">
+                              <img src="img/noticias/noticia5.jpg">
+                          </div>
+                          <div class="noticia-texto">
+                              <p>
+                                Así escapó Horner de la sanción por calificar a un comisario como "deshonesto"
+                              </p>
+                          </div>
+                      </a>
+                  </div> 
+
+                  <div class="noticia">
+                    <a href="../noticias/noticia6.html">
+                          <div class="noticia-img-wrapper">
+                              <img src="img/noticias/noticia6.jpg">
+                          </div>
+                          <div class="noticia-texto">
+                              <p>
+                                Toto Wolff, sobre la FIA y Hamilton: "Despertaron al león"
+                              </p>
+                          </div>
+                      </a>
+                  </div> 
+
+                  <div class="noticia">
+                    <a href="../noticias/noticia7.html">
+                          <div class="noticia-img-wrapper">
+                              <img src="img/noticias/noticia7.jpg">
+                          </div>
+                          <div class="noticia-texto">
+                              <p>
+                                El peligroso precedente de Verstappen
+                              </p>
+                          </div>
+                      </a>
+                  </div> 
+            </div>
+        </main>
+
+        <!-- SECTION (Galeria): Sección donde se muestran imágenes de las últimas carrearas -->
+
+        <section class="galeria">
+            <h3>Galería</h3>
+            <div class="galeria-wrapper">
+                <div class="foto-galeria">
+                   <img src="img/galeria/brasil-ver-ham.jpg">
+                </div>
+
+                <div class="foto-galeria">
+                    <img src="img/galeria/brasil-salida.jpg">
+                </div>
+
+                <div class="foto-galeria">
+                    <img src="img/galeria/brasil-hamilton.jpg">
+                </div>
+
+                <div class="foto-galeria">
+                    <img src="img/galeria/brasil-ham2.jpg">
+                </div>
+                <div class="foto-galeria">
+                    <img src="img/galeria/brasil-ver-ham2.jpg">
+                </div>
+                <div class="foto-galeria">
+                    <img src="img/galeria/brasil-ham3.jpg">
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER: Se encuentra en todas las páginas. Compuesto por un logo que redirige al index y por unas columnas con enlaces de las páginas 
+            que se han usado como referencia para hacer esta. -->
+
+        <footer>
+            <div class="footer-logo">
+                <a href="index.html"><img src="../recursos/img/logo2.png" height="70px"></img></a>
+            </div>
+            <div class="footer-lists-container">
+                <div>
+                    <ul>
+                        <li><a href="https://www.formula1.com/" target="_blank">Formula1.com</a></li>
+                        <li><a href="https://www.f1aldia.com/" target="_blank">F1aldia.com</a></li>
+                        <li><a href="https://www.caranddriver.com/es/formula-1/" target="_blank">Caranddriver.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://soymotor.com/" target="_blank">Soymotor.com</a></li>
+                        <li><a href="https://www.marca.com/motor/formula1.html?intcmp=MENUPROD&s_kw=formula-1" target="_blank">Marca.com</a></li>
+                        <li><a href="https://as.com/motor/formula_1.html?omnil=src-sab" target="_blank">As.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="https://www.reddit.com/r/formula1/" target="_blank">Reddit.com</a></li>
+                        <li><a href="https://www.sport.es/es/motor/formula1/" target="_blank">Sport.es</a></li>
+                        <li><a href="https://www.mundodeportivo.com/motor/f1" target="_blank">Mundodeportivo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <address>
+                <a href="mailto:creator@gmail.com">Contacto</a>
+            </address>
+        </footer>
+    </body>
+</html>

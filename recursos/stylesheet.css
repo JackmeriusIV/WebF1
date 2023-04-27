@@ -1,0 +1,810 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+/* --------------------------------------INDEX-------------------------------- */
+/* --------------------------------------HEADER------------------------------- */
+
+header{
+    
+    position: fixed;
+    width: 100%;
+    background: #e10600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+
+}
+
+.logo{
+    height: 65px;
+}
+
+
+nav{
+
+    padding-right: 8%;
+}
+
+nav ul li{
+
+    display: inline-block;
+    height: 69px;
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    background: black;
+}
+
+
+/* -----------------------SECCION-LIDER--------------------- */
+
+.section-index{
+
+    display: block;
+    color: white;
+    background: black;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila{
+
+    display: table;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.fila-marca-puntos {
+    
+    display: flex; 
+}
+
+.fila-marca-puntos div{
+
+    display: inline-block;
+    border-top: 1px solid rgba(179, 173, 173, 0.527);
+    border-right: 1px solid rgba(179, 173, 173, 0.527);
+    border-top-right-radius: 10px;
+    padding: 10px;
+} 
+
+.fila-marca-puntos h1{
+    box-sizing: border-box;
+    padding-top: 30px;
+    font-size: 40px;
+    margin-left: 20px;
+    padding-right: 200px;
+    border-top: 1px solid rgba(179, 173, 173, 0.527);
+    
+
+}
+
+.fila-marca-puntos div img{
+
+    display: block;
+    height: 70px;
+}
+.fila p{
+
+    margin-bottom: 15px;
+
+}
+.fila-img-container{
+
+    margin-left: 5%;
+    
+    
+}
+.fila-img-container img{
+
+    height: 150px;
+    display: block;
+    border-radius: 2px;
+}
+
+
+
+
+/* ---------------------MAIN-COL-IZQUIERDA------------------------ */
+
+
+
+main{
+    
+    margin-top: 2%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    
+  }
+
+  
+  
+  .col{
+    
+    flex: 0 0 48%;
+    background: white;
+
+    text-align: center;
+  }
+
+ .izquierda{
+
+    border-right: 11px #e10600 solid;
+    border-top: 11px #e10600 solid;
+    border-bottom: 11px #e10600 solid;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    font-size: 25px;
+  }
+
+  
+
+.izquierda a{
+
+    padding: 3%;
+    display: block;
+    color: black;
+    text-decoration: none;
+
+ }
+
+.izquierda h2{
+
+    text-align: left;
+    padding: 3%;
+    font-size: 37px;
+}
+.izquierda a:hover h2{
+
+    text-decoration: underline;
+
+   }
+
+.izquierda a:hover .intro p{
+
+    text-decoration: underline;
+
+}
+.izquierda a:hover img{
+
+    transform: scale(1.07);
+  }
+
+
+.izquierda .intro{
+
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 4%;
+    
+}
+.izquierda .intro h3{
+
+    margin-bottom: 8%;
+    color:#e10600;
+    font-size: 22px;
+}
+
+.izquierda .intro p{
+    
+    text-align: left;
+    padding-right: 7%;
+    font-size: 35px;
+}
+.img-wrapper{
+
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.img-wrapper img{
+
+    display: block;
+    position: relative;
+    width: 100%;
+    transition: 0.4s;
+}
+
+
+
+/* ---------------------MAIN-COL-DERECHA------------------------ */
+
+
+.derecha{
+
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+
+ .noticia{
+
+    font-size: 20px;
+    text-align: left;
+    flex: 0 0 49%;
+    display: flex;
+    position: relative;
+    transition: 0.4s;
+    margin-bottom: 3%;
+}
+
+.noticia a{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%; 
+    text-decoration: none;
+    color: black;
+}
+
+.noticia p{
+
+    display: block;
+}
+
+.noticia-img-wrapper{
+
+    
+    width: auto;
+    overflow: hidden;
+    flex: 1;
+    
+}
+
+.noticia-img-wrapper img{
+
+    display: block;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.noticia-texto{
+
+
+    max-height: 45%;
+    display: block;
+    flex-grow: 1;
+    flex-basis: 1;
+    max-width: 100%;
+    padding-bottom: 15px;
+    border-right: 1px gray solid;
+    border-bottom: 1px gray solid;
+    border-bottom-right-radius: 15px;
+    background: white; 
+}
+
+.noticia-texto p{
+    
+    padding: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.noticia-texto::before{
+
+    display: block;
+    position: relative;
+    
+    content: '';
+    width: 100%;
+    right: -1px;
+    
+    height: 15px;
+    background-color: white;
+}
+
+.noticia a:hover img{
+
+    transform: scale(1.2);
+}
+
+.noticia a:hover .noticia-texto{
+
+    text-decoration: underline;
+    border-color: red;
+}
+
+/* --------------------------GALERIA---------------------- */
+
+
+.galeria{
+    padding: 0;
+    margin: 1%;
+    display: block;
+    max-width: 100%;
+    background: white;
+    
+}
+.galeria h3{
+
+    font-size: 35px;
+    color: black;
+}
+.galeria-wrapper{
+
+    
+    border-top: black 12px solid;
+    border-left: black 12px solid;
+    border-bottom: black 12px solid;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.foto-galeria{
+
+    /* background: yellow; */
+    flex: 0 0 40%;
+    vertical-align: middle;
+    max-width: 50%;
+    padding: 1%;
+}
+
+.foto-galeria img{
+
+    display: block;
+
+}
+
+
+
+
+/* ---------------------FOOTER--------------------- */
+
+footer{
+
+    padding-top: 1%;
+    margin-top: 3%;
+    background: black;
+
+}
+
+.footer-lists-container{
+
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-bottom: 2%;
+}
+.footer-logo{
+
+    
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.footer-logo{
+
+    
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+.footer-lists-container ul{
+
+    list-style: none;
+}
+.footer-lists-container li{
+
+   margin-bottom: 10px;
+}
+.footer-lists-container a{
+
+  
+  text-decoration: none;
+  color: white;
+  display: inline;
+  width: 100%;
+  padding-bottom: 2px;
+}
+.footer-lists-container span{
+    
+    background-color: yellow;
+}
+.footer-lists-container a:hover{
+
+    
+    color: #aaa;
+    border-bottom: 2px solid red;
+  
+  }
+
+
+address {
+
+    
+    font-style: normal;
+    padding: 1%;
+}
+address a{
+
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+address a:active{
+
+    color: #aaa;
+}
+
+
+
+
+/*--------------------------------NOTICIA------------------------------------*/
+
+
+
+
+
+article{
+
+    padding-top: 70px;
+    width: 70%;
+    margin: 0 auto;
+    color: black;
+}
+.titular{
+
+    margin-top: 7%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.titular h3{
+
+    color: #e10600;
+}
+
+.titular h1{
+
+    font-size: 45px;
+    margin-bottom: 2%;
+}
+
+.titular p{
+
+    color: rgb(71, 71, 71);
+    font-size: 20px;
+}
+
+article figure{
+
+    margin-top: 2%;
+}
+
+article figure figcaption{
+
+    margin-top: 2px;
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+
+.cuerpo-noticia{
+
+    margin-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.cuerpo-noticia .parrafo{
+
+    margin-top: 5%;
+    font-size: 22px;
+}
+
+            /* -----------Otras Noticias------------*/
+
+
+.otras-noticias{
+
+    margin-top: 7%;
+    padding-left: 15%;
+}
+
+.otras-noticias p{
+
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+.otras-noticias span{
+
+    font-weight: bold;
+}
+
+.otras-noticias-fila{
+
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.otras-noticias-fila::before{
+
+    content: '';
+    display: block;
+    padding-top: 5px;
+    left: 0;
+    width: 35px;
+    border-top: 1px solid #aaa;
+}
+
+.parrafo a{
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* ---------------------------------------------PÁGINA PILOTO---------------------------------- */
+/* ---------------------------------------------COL IZQDA---------------------------------- */
+
+
+
+
+
+
+.seccion-piloto{
+
+    padding-top: 5%;
+}
+.seccion-piloto h1{
+
+    text-align: center;
+    font-size: 45px;
+    padding: 2%;
+}
+.piloto-datos{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    color: white;
+    
+}
+
+
+.piloto-col{
+
+
+    margin: 2%;
+    box-sizing: border-box;
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.piloto-apartado{
+
+    flex: 1;
+
+}
+
+
+.basicos{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: black;
+}
+
+.basicos p{
+
+    font-size: 50px;
+    padding: 10px;
+}
+.basicos div{
+
+    
+    overflow: hidden;
+}
+.basicos img{
+    height: 40px; 
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 6px;
+}
+
+.nombre{
+
+    text-align: center;
+    font-size: 60px;
+    background: black;
+    font-weight: normal;
+}
+.resumen{
+
+    padding: 5%;
+    background: black;
+    border-right: 12px solid red;
+    border-bottom: 12px solid red;
+    border-bottom-right-radius: 35px;
+}
+.imagen-piloto{
+
+    display: block;
+    overflow: hidden;
+}
+
+.imagen-piloto img{
+
+    flex: 1;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+/* ---------------------------------------------PÁGINA PILOTO---------------------------------- */
+/* ---------------------------------------------COL DERECHA---------------------------------- */
+
+
+
+
+.ficha{
+
+    border-top: 2px solid red;
+    border-right: 3px solid red;
+    border-bottom: 5px solid red;
+    border-left: 3px solid red;
+
+}
+
+.ficha h3{
+
+    background: black;
+    padding: 2% 3px 2%;
+    background: rgb(24, 24, 24);
+}
+
+dl{
+
+    background-color: black;
+    border: white groove 1px;
+    border-style: groove;
+}
+
+.ficha dt, dd{
+    
+    display: inline-block;
+    width: 48%;
+    padding: 3px;
+}
+
+.ficha dt{
+
+    color: rgb(192, 192, 192);
+}
+
+.monoplaza-img{
+
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------PÁGINA CLASIFICACIÓN------------------------------- */
+
+
+
+
+
+
+.tabla-clasificacion{
+
+    padding-top: 7%;
+    
+}
+
+.tabla-clasificacion h1{
+
+    padding: 2%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 45px;
+}
+.tabla-clasificacion table{
+
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.tabla-clasificacion thead{
+
+    text-align: left;
+    
+}
+
+.tabla-clasificacion th{
+
+    font-weight: normal;
+    color: gray;
+}
+
+
+.tabla-clasificacion td, th{
+
+    padding: 15px;
+}
+
+.tabla-clasificacion tr{
+
+
+    color: #4a4a4a;
+
+}
+.tabla-clasificacion a{
+
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+/* ------------------ BARRA DE BÚSQUEDA ----------------- */
+
+
+#busqueda-container{
+
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+#busqueda-container input {
+
+    padding: 5px;
+    
+}
