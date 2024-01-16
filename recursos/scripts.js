@@ -32,11 +32,9 @@ function ponEtiquetas(listaPilotos){
 
 function noticiaAleatoria(){
 
-    var directorio = window.location.pathname; //ruta absoluta de la página donde esté situado el usuario
-    
-    var directorioWeb = directorio.substring(0, directorio.lastIndexOf('w')); //substring que crea la ruta absoluta del directorio "web"
+    var directorio = window.location.origin; //ruta absoluta de la página donde esté situado el usuario
 
-    var directorioNoticias = directorioWeb + "web/noticias/noticia"; //ruta donde se encuentran las noticias
+    var directorioNoticias = directorio + "/noticias/noticia"; //ruta donde se encuentran las noticias
 
     var n = Math.round(Math.random() * (7 - 1)) + 1; //genera un número aleatorio del 1 al 7
 
@@ -75,9 +73,11 @@ function buscaPiloto(event){
 
         var textoInput = document.getElementById("busqueda").value.trim().toLowerCase();
 
+        console.log("../pilotos/"+textoInput+"/piloto.html")
+
         if(pilotos.includes(textoInput)){
 
-            window.open("../pilotos/"+textoInput+"/piloto.html", "_self");
+            window.open("pilotos/"+textoInput+"/piloto.html", "_self");
             
         }
     }
