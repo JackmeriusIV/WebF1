@@ -32,7 +32,7 @@ function ponEtiquetas(listaPilotos){
 
 function noticiaAleatoria(){
 
-    var directorio = window.location.origin; //ruta absoluta de la página donde esté situado el usuario
+    var directorio = window.location.origin; //ruta absoluta de la página
 
     var directorioNoticias = directorio + "/noticias/noticia"; //ruta donde se encuentran las noticias
 
@@ -72,8 +72,6 @@ function buscaPiloto(event){
         "vettel", "stroll", "gasly", "tsunoda", "raikkonen", "giovinazzi", "russell", "latifi", "schumacher", "mazepin"];
 
         var textoInput = document.getElementById("busqueda").value.trim().toLowerCase();
-
-        console.log("../pilotos/"+textoInput+"/piloto.html")
 
         if(pilotos.includes(textoInput)){
 
