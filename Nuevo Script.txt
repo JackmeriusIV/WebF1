@@ -1,1 +1,0 @@
-He añadido un campo de búsqueda en el índex. Cuando se escribe el apellido de un piloto y se pulsa enter, el script redirecciona a la página con los datos del piloto.
